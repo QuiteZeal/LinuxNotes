@@ -1,5 +1,5 @@
 # Change SSH port on CentOS 8
-The key step is turn your want listen-port, and close the default ssh-port.
+The key step is to turn your want listen-port and close the default ssh-port.
 For CentOS 8, will use `firewalld`
 
 ## Open your want listen-port and close the default
@@ -7,7 +7,7 @@ For CentOS 8, will use `firewalld`
 sudo firewall-cmd --zone=public --permanent --add-port=30000/tcp
 sudo firewall-cmd --zone=public --permanent --remove-service=ssh
 ```
-If firewalld not installed, you can manual install and enable it.
+If firewalld not installed, you can manually install and enable it.
 ```
 sudo yum -y install firewalld
 sudo systemctl enable --now firewalld
@@ -22,7 +22,7 @@ It will use semange:
 ```
 semanage port -l | grep ssh
 ```
-it will be answer:
+it will be answered:
 `ssh_port_t                     tcp      3000`
 
 ## Verify and restart
