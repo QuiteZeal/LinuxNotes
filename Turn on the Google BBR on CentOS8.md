@@ -31,4 +31,4 @@ Finally:
 `lsmod | grep bbr`
 
 get an answer like:
-`tcp_bbr                16384  32`
+`tcp_bbr                20480  1`
