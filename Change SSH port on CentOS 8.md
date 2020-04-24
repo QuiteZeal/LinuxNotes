@@ -4,6 +4,7 @@ For CentOS 8, will use `firewalld`
 
 ## Open your want listen-port and close the default
 ```
+sudo semanage port -a -t ssh_port_t -p tcp 3000
 sudo firewall-cmd --zone=public --permanent --add-port=30000/tcp
 sudo firewall-cmd --zone=public --permanent --remove-service=ssh
 ```
