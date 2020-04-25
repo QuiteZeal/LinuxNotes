@@ -10,4 +10,23 @@ Because CentOS 8 use SELinux, so need set permissive, like:
 ```
 setenforce permissive
 ```
-and then, it works.
+and then, it works. **But this operation can not work permanently.**
+
+## Avoid Nginx 403 Permanently
+The key is to handle with SELinux.
+
+Use these:
+Turn on the `httpd network connect`:
+```
+ setsebool -P httpd_can_network_connect on
+```
+And get SELinux enforce:
+```
+getenforce
+```
+Then, change the security:
+
+```
+chcon -Rt httpd_sys_content_t /your_path
+```
+
