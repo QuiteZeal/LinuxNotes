@@ -15,13 +15,13 @@ openssl req -x509 -nodes -keyout /etc/ssl/private/yourname.key -out /etc/ssl/pri
 ```
 **But the second way need `cat` to get`.pem`.**
 >
-req – is a command for X.509 Certificate Signing Request (CSR) management.
-x509 – means X.509 certificate data management.
-days – defines a number of days certificate is valid for.
-newkey – specifies certificate key processor.
-rsa:2048 – RSA key processor, will generate a 2048 bit private key.
-keyout – sets the key storage file.
-out – sets the certificate storage file, note that both certificate and key are stored in the same name
+- req – is a command for X.509 Certificate Signing Request (CSR) management.
+- x509 – means X.509 certificate data management.
+- days – defines a number of days certificate is valid for.
+- newkey – specifies certificate key processor.
+- rsa:2048 – RSA key processor, will generate a 2048 bit private key.
+- keyout – sets the key storage file.
+- out – sets the certificate storage file, note that both certificate and key are stored in the same name
 
 ## Renew
 You can delete old `.crt` and use `Create New Onw`way to create new `.crt`.
