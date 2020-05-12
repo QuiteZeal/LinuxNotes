@@ -1,4 +1,4 @@
-# Fixed: Connection error when use explicit Ftp over SSL to vsftpd server
+# Solved: Connection error when use explicit Ftp over SSL to vsftpd server
 I have install SSL under vsftpd, and I try to use FileZilla to connect it, but I got:
 ```
 response: 220 (vsftpd 3.0.3) 
