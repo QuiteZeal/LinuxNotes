@@ -1,4 +1,4 @@
-#Set up Nginx server blocks
+# Set up Nginx server blocks
 I recommend using a particular .conf file for every site.
 For achieve that, we need add `include` into nginx.conf, such as:
 ```
