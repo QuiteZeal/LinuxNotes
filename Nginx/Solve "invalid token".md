@@ -1,4 +1,4 @@
-# Slove "invalid token"
+# Solve "invalid token"
 When I use postfixadmin, I encounter this trouble:
 ```
 invalid token (session timeout; refresh the page and try again?)
